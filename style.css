@@ -1,0 +1,369 @@
+/*
+Theme Name: Sawa's English Note New
+Author: Sawa
+Description: a theme for Sawa's English Note
+Version:2.0
+Memo:
+Google Analytics
+Google Search Console
+XML Sitemap Generator for Google
+Fetch as Google
+画像を圧縮する
+*/
+
+:root {
+    --mint: rgb(184, 239, 184);
+    --gray: rgb(78, 87, 78);
+    --lightgrgy: rgb(150, 159, 150);
+    --gold: rgb(229, 210, 103);
+    --green: rgb(15, 83, 15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vh;
+    line-height: 1.5;
+    color: var(--gray);
+    text-decoration: none;
+    list-style: none;
+}
+li, ul {
+    display: inline-block;
+}
+a:hover {
+    color: var(--gold);
+}
+.bold {
+    font-weight: bold;
+}
+.shadow {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--mint);
+    min-height: 100vh;
+}
+.index-image, .single-image {
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+h3 {
+    text-align: center;
+    background-color: var(--mint);
+    margin: 10px auto;
+}
+
+/* header & footer */
+header {
+    height: 200px;
+    width: 100%;
+}
+.header-text {
+    height: 180px;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.header-left {
+    width: 65%;
+    text-align: center;
+}
+.header-right {
+    width: 35%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 50%;
+    border-left: 1px solid rgb(78, 87, 78);
+}
+.header-right p {
+    margin-left: 10%;
+}
+
+footer {
+    background-color: var(--green);
+    height: 250px;
+    width: 100%;
+}
+footer p {
+    color: #fff;
+    padding: 10px;
+}
+/* header & footer */
+
+/* main & sidebar */
+main {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+}
+.index {
+    width: 70%;
+}
+.sidebar {
+    width: 30%;
+}
+
+.element {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.element select {
+    width: 100%;
+    padding: 10px;
+}
+form input[type="text"] {
+    width: 72%;
+    padding: 10px;
+}
+form input[type="submit"] {
+    width: 25%;
+    padding: 10px;
+}
+/* main & sidebar */
+
+/* index-posts */
+.index-post {
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.index-title-excerpt {
+    width: 80%;
+}
+.index-date {
+    float: right;
+}
+/* index-posts */
+
+/* pagination */
+.pagination, .comment-pagination {
+    display: flex;
+    justify-content: center;
+}
+.page-numbers {
+    display: flex;
+}
+.page-numbers li {
+    margin: 0 5px;
+}
+.page-numbers a, .page-numbers span, .nav-previous, .nav-next {
+    padding: 20px;
+    border: 1px solid rgb(150, 159, 150);
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+.nav-previous, .nav-next {
+    text-align: center;
+}
+
+li .current, li .page-numbers:hover, .nav-previous:hover, .nav-next:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+/* pagination */
+
+/* basic-back */
+.basic-back {
+    background-color: #fff;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.basic-back h1 {
+    margin: 10px auto;
+    background-color: var(--mint);
+    text-align: center;
+}
+/* basic-back */
+
+/* error & single & comments & serach & archives */
+
+.single-post {
+    width: 95%;
+    margin: auto;
+}
+.single-image {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.prev, .next {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+.prev, .prev a {
+    float: right;
+}
+
+.comment textarea, .comment input[type="text"], .comment input[type="email"], .comment input[type="url"], .comment input[type="submit"] {
+    padding: 10px;
+    border: 1px solid rgb(78, 87, 78);
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.comment textarea, .comment input[type="text"], .comment input[type="email"], .comment input[type="url"] {
+    width: 100%;
+    resize: none;
+}
+.comment input[type="submit"] {
+    background-color: #fff;
+    display: block;
+}
+.comment input[type="submit"]:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+.each-comment {
+    margin-bottom: 10px;
+}
+
+.archives {
+    width: 95%;
+    margin: auto;
+}
+.archives li {
+    display: block;
+    margin: 10px auto;
+}
+
+/* single & comments & serach & archives */
+
+@media only screen and (max-width: 1000px) {
+
+    * {
+        font-size: 2.1vh;
+    }
+    main {
+        flex-direction: column;
+        min-height: 80vh;
+    }
+    .header-left {
+        width: 60%;
+    }
+    .header-right {
+        width: 40%;
+    }
+    .header-right p {
+        margin-left: 5%;
+    }
+    .index, .sidebar {
+        width: 100%;
+    }
+    .sidebar {
+        padding: 30px 0;
+    }
+    .element {
+        border-radius: 5px;
+    }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    * {
+        font-size: 2.2vh;
+    }
+    .index-title h2, .index-title h2 a, .index-excerpt p, .index-date p {
+        font-size: 1.6vh;
+    }
+
+    header {
+        height: 150px;
+    }
+    .header-text {
+        height: 130px;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .header-left {
+        width: 90%;
+        height: 50%;
+        align-items: center;
+    }
+    .header-title {
+        margin-top: 30px;
+        line-height: 1;
+    }
+    .header-desc, .prev a, .next a, .prev p, .next p {
+        font-size: 1.5vh;
+        line-height: 1;
+    }
+    .header-right {
+        width: 100%;
+        height: 50%;
+        border-left: none;
+    }
+    .header-right p {
+        margin: auto;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    .element {
+        margin: 10px auto;
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
+    .index-post {
+        margin: 10px auto;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .pagination, .comment-pagination {
+        max-width: 100%;
+    }
+    .page-numbers a, .page-numbers span, .nav-previous, .nav-next {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .basic-back {
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    .comment textarea, .comment input[type="text"], .comment input[type="email"], .comment input[type="url"] {
+        margin: 5px auto;
+    }
+    .comment input[type="submit"] {
+        margin: 5px auto;
+    }
+}
